@@ -1,0 +1,106 @@
+@import '../mixins/afbe';
+@import '../mixins/font';
+/* ================================================
+               menu part starts
+===================================================*/
+.menu_fix {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% ;
+    margin-top: 0 !important;
+    height:70px ;
+    background:rgba(7, 89, 232, 0.906) !important ;
+
+}
+
+
+.main_menu {
+    height: 70px;
+    z-index: 999;
+    background: linear-gradient(36deg, rgba(32, 74, 180, 0.76) 2%, rgba(68, 125, 223, 0.76) 44%, );
+    font-family: 'Montserrat Alternates', sans-serif;
+    position: absolute;
+    left: 0;
+    top: 20px;
+    width: 100%;
+
+
+    
+
+    ul {
+        margin-right: 35% !important;
+
+        li {
+            a {
+                @include font(#fff, 'Montserrat Alternates', 16px, 400);
+                line-height: 52px;
+                margin: 0 5px;
+              
+                position: relative;
+                &::after {
+                    @include afbe ();
+                    bottom: 0;
+                    left: 0;
+                    width: 0;
+                    height: 3px;
+                    background:#fe7215;
+                    opacity: 1;
+                    transition: all linear .4s;
+                    -webkit-transition: all linear .4s;
+                    -moz-transition: all linear .4s;
+                    -ms-transition: all linear .4s;
+                    -o-transition: all linear .4s;
+                }
+                &:hover {
+                   background: #fff;
+                    color: #fe7215;
+                }
+                &:focus {
+                    color: #fe7215 !important;
+                }
+                &:hover::after {
+                  
+                    width: 50%;
+                }
+            }
+        }
+    }
+
+    .our_form {
+        position: relative;
+
+        input {
+            position: absolute;
+            top: -19px;
+            right: 3px;
+            width: 165px !important;
+            transition: all linear .4s;
+            -webkit-transition: all linear .4s;
+            -moz-transition: all linear .4s;
+            -ms-transition: all linear .4s;
+            -o-transition: all linear .4s;
+        }
+
+        &:hover input {
+            width: 215px !important;
+            padding-right: 138px;
+            margin-right: -1px !important;
+        }
+
+        button {
+            position: absolute;
+            top: -16px;
+            right: 10px;
+            border: 0;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            background: none;
+            color: #444;
+            font-size: 16px;
+        }
+    }
+}
+/* ================================================
+            menu part end
+===================================================*/

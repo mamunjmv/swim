@@ -1,0 +1,26 @@
+@import '../mixins/afbe';
+@import '../mixins/font';
+/* ================================================
+               Button part starts
+===================================================*/
+
+.btn_part {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    right: 17px;
+    bottom: 10px;
+    background: #faa70d;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+    z-index: 999;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+/* ================================================
+              Button part end
+===================================================*/

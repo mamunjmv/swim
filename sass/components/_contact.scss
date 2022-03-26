@@ -1,0 +1,141 @@
+@import '../mixins/afbe';
+@import '../mixins/font';
+
+/* ================================================
+                Contact part starts
+===================================================*/
+#contact_part {
+    padding: 70px 0 90px;
+   
+    .contact_head {
+        h2 {
+            @include font(#222, 'Montserrat Alternates', 32px, 700);
+
+        }
+
+        p {
+            @include font(#222, 'Poppins', 16px, 400);
+            line-height: 24px;
+            margin-top: 15px;
+            margin-bottom: 24px;
+        }
+    }
+    .contact_all {
+        margin-top: 20px;
+    .contact_details {
+        background:#faa70d;
+        padding: 15px 30px;
+        transition: all linear .3s;
+        -webkit-transition: all linear .3s;
+        -moz-transition: all linear .3s;
+        -ms-transition: all linear .3s;
+        -o-transition: all linear .3s;
+        h3 {
+            @include font(#fff, 'Montserrat Alternates', 24px, 700); 
+            margin-bottom: 15px;
+               
+        }
+        
+        p {
+            @include font(#fff, 'Poppins', 15px, 400);
+            line-height: 24px; 
+            margin-bottom: 7px !important;
+            padding-left: 40px;
+           padding-bottom: 10px;
+
+            position: relative;
+            span {
+                display: block;
+               
+            } 
+            i {
+            
+                position: absolute;
+                left: 0;
+                top: 40%;
+                transform: translateY(-50%);
+                font-size: 24px;
+              
+            
+           }
+        }
+        &:hover {
+            background:#0759e8e7;
+           h3,p {
+               color: #fff;
+           }
+        }
+       
+    }
+    .contact_form {
+        margin-left: 20px;
+        h3 {
+            @include font(#222, 'Montserrat Alternates', 24px, 700); 
+            margin-bottom: 15px;
+               
+        }
+        input {
+            @include font(#a59a9a,'Poppins',13px,700);
+            width: 39%;
+            height: 40px;
+            border: 1px solid #ddd ;
+            margin-right: 4px;
+            font-style: italic;
+            margin-left: 12px;
+            border-radius:10px ;
+            -webkit-border-radius:10px ;
+            -moz-border-radius:10px ;
+            -ms-border-radius:10px ;
+            -o-border-radius:10px ;
+            &:last-child { 
+            
+                margin-right: 0;
+            }
+
+        }
+        textarea {
+            @include font(#a59a9a, 'Poppins', 13px, 700);
+            width: 82.1%;
+            height: 80px;
+            margin-right: 5px;
+            font-style: italic;
+            margin-top: 20px;
+            padding: 5px 10px;
+            resize: none;
+            border-radius:10px ;
+            -webkit-border-radius:10px ;
+            -moz-border-radius:10px ;
+            -ms-border-radius:10px ;
+            -o-border-radius:10px ;
+            border: 1px solid #ddd ;
+        }
+        button {
+            @include font(#444, 'Poppins', 20px, 500);
+            width: 82.2%;
+            background: #f1f1f1; 
+            padding: 11px 0;
+            margin-top: 25px;
+            border: 0;
+            border-radius:10px ;
+            -webkit-border-radius:10px ;
+            -moz-border-radius:10px ;
+            -ms-border-radius:10px ;
+            -o-border-radius:10px ;
+            transition: all linear .3s;
+            -webkit-transition: all linear .3s;
+            -moz-transition: all linear .3s;
+            -ms-transition: all linear .3s;
+            -o-transition: all linear .3s;
+            &:hover {
+                background: #faa70d;
+                color: #fff;
+            }
+        }
+
+    }
+}
+
+}
+/* ================================================
+                Contact part end
+===================================================*/

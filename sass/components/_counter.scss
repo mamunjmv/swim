@@ -1,0 +1,41 @@
+@import '../mixins/afbe';
+@import '../mixins/font';
+
+/* ================================================
+                Counter part starts
+===================================================*/
+
+#counter_part {
+    background: #0759e8e7;
+    padding: 70px 0 40px;
+    position: relative;
+    z-index: 1;
+    .counter_inner {
+        h2 {
+            @include font(#fff, 'Montserrat Alternates', 32px, 700);
+        }
+        .second {
+            position: relative;
+            &::after {
+                position: absolute;
+                content: 'K';
+            }
+           
+        }
+        .fifth {
+            position: relative;
+            &::after {
+                position: absolute;
+                content: '%';
+            }
+        }
+        p {
+            @include font(#fff, 'Poppins', 14px, 400);
+            line-height: 24px;
+            margin-top: 5px;
+        }
+    }
+}
+/* ================================================
+                Counter part end
+===================================================*/
